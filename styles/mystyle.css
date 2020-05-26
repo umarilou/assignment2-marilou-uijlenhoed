@@ -1,0 +1,109 @@
+
+body{
+	font-family: helvetica;
+	color: #FFFFFF;
+	background-image: url('../images/earthSky.jpg');
+}
+
+@font-face{
+	font-family: myFirstFont; 
+	src: url(digital_7.ttf);
+}
+
+#clock {
+	font-family: myFirstFont; 
+	font-size: 200px; 
+	text-align: left; 
+	padding: 10px;
+	margin-left: 310px; 
+	margin-right: 350px; 
+	border-style: solid; 
+	border-color: #FFFFFF;
+	border-width: 10px;
+	min-width: 580px; 
+}
+
+#marsClock {
+	font-family: myFirstFont; 
+	font-size: 200px; 
+	text-align: left; 
+	padding: 10px;
+	margin-left: 310px; 
+	margin-right: 350px; 
+	border-style: solid; 
+	border-color: #FFFFFF;
+	border-width: 10px;
+	min-width: 580px; 
+}
+
+.text{
+	text-align: center;
+	font-size: 50px; 
+}
+
+.amsterdam{
+	position: absolute;
+	width: 615px;
+	margin-left: 310px
+
+}
+
+.cyclist{
+	position: absolute;
+	width: 50px;
+	top: 185px;
+	left: 310px;
+	animation-name: cycle;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+
+@keyframes cycle{
+	0% {top: 185px; left: 310px;}
+	50%{top: 185px; left: 885px; transform: scale(1,1);}
+	51%{transform: scale(-1,1);}
+	100%{top:185px; left: 310px; transform: scale(-1,1);}
+}
+
+.mars{
+	position: absolute; 
+	width: 620px; 
+	margin: 310px; 
+	top: 303px; 
+}
+
+
+.martian{
+	position: absolute;
+	width: 70px;
+	top: 663px;
+	left: 310px;
+	animation-name: rover;
+	animation-duration: 45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+
+@keyframes rover{
+	0% {top: 663px; left: 310px;}
+	50%{top: 663px; left: 865px; transform: scale(1,1);}
+	51%{transform: scale(-1,1);}
+	100%{top:663px; left: 310px; transform: scale(-1,1);}
+}
+
+#button{
+	position: absolute;
+	width: 200px; 
+	height: 50px;
+	font-size: 20px;
+	font-family: helvetica; 
+	background-color: #ecbcfd; 
+
+}
+
+#time{
+	position: absolute; 
+	width: 50px;
+	top: 130px ;
+}
